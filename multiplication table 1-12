@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main()
+{
+	int x,y;
+	printf("Enter number=");
+	scanf("%d",&y);
+	for(x=1;x<=12;x++)
+	{
+		printf("%d x %d = %d\n",y,x,y*x);
+	}
+	getch();
+	return 0;
+}
