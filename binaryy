@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+	int x;
+	int bi[100];
+	int i=0, j;
+	printf(" Input Decimal value : ");	
+	scanf("%d", &x);
+	do
+	{
+		bi[i] = x % 2;
+        x /= 2;
+        i++;
+	}while(x > 0);
+	printf("\n Binary value is ");
+	for(j = i - 1; j >= 0; j--)
+	{
+		printf("%d", bi[j]);	
+	}	
+	return 0;
+}
