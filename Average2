@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+    int i=1,num,sum=0;
+    float avg;
+    for(i=1;i<=10;i++)
+    {
+    	printf("Enter height %d = ",i);
+    	scanf("%d",&num);
+    	sum=sum+num;
+	}
+	avg=sum/10.f;
+	printf("\nSum of number : %d\n ",sum);
+	printf("\nAverage : %.2f\n ",avg);
+	getch();
+}
